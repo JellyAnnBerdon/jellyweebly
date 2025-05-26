@@ -1,0 +1,227 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1f2937;
+  --primary: #4f46e5;
+  --section-bg: #f9fafb;
+  --card-bg: #ffffff;
+  --footer-bg: #1f2937;
+  --footer-text: #d1d5db;
+}
+
+body.dark-mode {
+  --bg-color: #1f2937;
+  --text-color: #e5e7eb;
+  --primary: #a78bfa;
+  --section-bg: #374151;
+  --card-bg: #111827;
+  --footer-bg: #111827;
+  --footer-text: #9ca3af;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+
+/* Navbar container */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--bg-color);
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.05);
+  transition: background-color 0.3s ease;
+}
+
+/* Flex container */
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  user-select: none;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  border-color: var(--primary);
+  color: var(--primary);
+  outline: none;
+}
+
+/* Search input */
+#searchInput {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+  width: 180px;
+  max-width: 100%;
+}
+
+#searchInput:focus {
+  border-color: var(--primary);
+}
+
+/* Dark mode toggle button */
+#darkToggle {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+#darkToggle:hover,
+#darkToggle:focus {
+  color: #a78bfa; /* lighter purple on hover */
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .nav-links {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  #searchInput {
+    width: 100%;
+    max-width: none;
+  }
+}
+/*________________________________________________________________  */
+
+
+
+/* Default light mode */
+.post, .testimonial {
+  background: white;
+  color: #1f2937;
+}
+
+/* Dark mode overrides */
+body.dark .post,
+body.dark .testimonial {
+  background: #1e1e1e; /* Dark background */
+  color: #e0e0e0;       /* Light text */
+}
+
+body.dark .post a,
+body.dark .testimonial a {
+  color: #a5b4fc; /* Light purple link for dark mode */
+}
+
+/* Optional: adjust heading */
+body.dark .section h2,
+body.dark h3 {
+  color: #f3f4f6;
+}
+/*______________________________________________________________________-  */
+
+/* Cards and sections */
+.post,
+.testimonial,
+.slider-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post h3,
+.post p,
+.testimonial p,
+.testimonial h4 {
+  color: var(--text-color);
+}
+
+/* Section Headings (optional for visual clarity) */
+.section h2,
+.section h3,
+.section p {
+  color: var(--text-color);
+}
+/*__________________________________________________________________________  */
+
+/* Section Background Fix */
+.section {
+  background-color: var(--section-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fix for bg-light */
+.bg-light {
+  background-color: var(--section-bg) !important;
+}
+
+/* Typography (headings, p) */
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+/* Post Card Fixes */
+.post {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post a {
+  color: var(--primary);
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+/*_______________________________________________________  */
+body.dark-mode .section-title {
+  color: var(--text-color) !important;
+}
+

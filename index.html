@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog - Stories that Inspire</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme/theme.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <div class="container nav-content">
+    <div class="logo">My Blog</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
+    
+    <div class="nav-right">
+      <input type="text" id="searchInput" placeholder="Search posts..." aria-label="Search posts" />
+
+      <button id="darkToggle" aria-label="Toggle Dark Mode">
+        <i class="bx bx-moon"></i>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container" data-aos="fade-up">
+      <h1>Welcome to My Blog</h1>
+      <p>Sharing personal stories, insights, and travel experiences.</p>
+      <a href="#latest-posts" class="btn-primary">Explore Posts</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section text-center">
+    <div class="container" data-aos="fade-up">
+      <h2>About This Blog</h2>
+      <p>This blog is a space where I document my life, travels, thoughts, and creative ideas.</p>
+    </div>
+  </section>
+
+  <!-- Latest Posts -->
+  <!-- Add this inside your Latest Posts section -->
+
+<section id="latest-posts" class="section bg-light">
+  <div class="container">
+    <h2 class="text-center" data-aos="fade-up">Latest Post</h2>
+    
+
+    <div class="posts-slider-container" data-aos="zoom-in">
+      <button id="prevBtn" class="slider-btn"><i class='bx bx-chevron-left'></i></button>
+
+      <div class="posts-slider">
+        <!-- Post 1 -->
+        <div class="post">
+          <img src="media/1.jpg" alt="Mountains" />
+          <h3>A Day at SM Jmall</h3>
+          <p>Spent a relaxing Saturday exploring food, fashion, and tech at SM Jmall.</p>
+          <a href="posts/post1.html">Read More →</a>
+        </div>
+        <!-- Post 2 -->
+        <div class="post">
+          <img src="media/2.jpg" alt="Writing" />
+          <h3>Celebrating Christmas with Family </h3>
+          <p>Spent a heartwarming Christmas filled with laughter, food, and joy with my family and cousins.</p>
+          <a href="posts/post2.html">Read More →</a>
+        </div>
+        <!-- Post 3 -->
+        <div class="post">
+          <img src="media/3.png" alt="City" />
+          <h3>Chasing the Sunset</h3>
+          <p>Watched the sky turn gold as the sun set — a peaceful end to a busy day.</p>
+          <a href="posts/post3.html">Read More →</a>
+        </div>
+        <!-- Post 4 -->
+        <div class="post">
+          <img src="https://source.unsplash.com/400x250/?forest,path" alt="Forest Path" />
+          <h3>Walking Through the Forest</h3>
+          <p>A peaceful stroll through nature's green corridors.</p>
+          <a href="posts/post4.html">Read More →</a>
+        </div>
+        <!-- Post 5 -->
+        <div class="post">
+          <img src="https://source.unsplash.com/400x250/?beach,sunset" alt="Beach Sunset" />
+          <h3>Sunset at the Beach</h3>
+          <p>Capturing the perfect golden hour by the ocean.</p>
+          <a href="posts/post5.html">Read More →</a>
+        </div>
+        <!-- Post 6 -->
+        <div class="post">
+          <img src="https://source.unsplash.com/400x250/?mountain,lake" alt="Mountain Lake" />
+          <h3>Serenity by the Lake</h3>
+          <p>Finding calmness beside pristine mountain waters.</p>
+          <a href="posts/post6.html">Read More →</a>
+        </div>
+      </div>
+
+      <button id="nextBtn" class="slider-btn"><i class='bx bx-chevron-right'></i></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="section bg-light" id="testimonials">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="section-title"><i class='bx bx-comment-detail'></i>What Readers Say</h2>
+    <div class="testimonials-grid">
+      
+      <div class="testimonial">
+        <img src="https://i.pravatar.cc/80?img=5" alt="Sarah" class="testimonial-avatar" />
+        <p><i class='bx bxs-quote-alt-left'></i> Your stories are so heartfelt and inspiring. I never miss a post.</p>
+        <div class="stars">
+          <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+        </div>
+        <h4>Sarah L.</h4>
+      </div>
+
+      <div class="testimonial">
+        <img src="media/kv.jpg" alt="Kevin" class="testimonial-avatar" />
+        <p><i class='bx bxs-quote-alt-left'></i> I started journaling again because of this blog. Thank you!</p>
+        <div class="stars">
+          <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+        </div>
+        <h4>Kevin M.</h4>
+      </div>
+
+      <div class="testimonial">
+        <img src="media/amd.jpg" alt="Amanda" class="testimonial-avatar" />
+        <p><i class='bx bxs-quote-alt-left'></i> Beautiful writing, amazing visuals. It's my weekly escape.</p>
+        <div class="stars">
+          <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+        </div>
+        <h4>Amanda T.</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Subscribe Section -->
+  <section id="subscribe" class="section cta">
+    <div class="container" data-aos="fade-up">
+      <h2>Want to Stay Updated?</h2>
+      <p>Subscribe to receive the latest stories and updates right to your inbox.</p>
+      <a href="#" class="btn-primary">Subscribe Now</a>
+    </div>
+  </section>
+
+  <!-- footer -->
+   
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-logo">
+          <h1>Jelly Weebly</h1>
+        </div>
+        <nav class="footer-nav">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+          <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="footer-copy">© 2025 JellyWeebly. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
